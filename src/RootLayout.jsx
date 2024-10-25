@@ -7,23 +7,30 @@ const RootLayout = () => {
 
     const navContent = <>
 
-        <NavLink
-            to='/'
-            className={({isActive}) => `hover:bg-gray-300 transition-all min-w-[200px] px-14 py-2 rounded-md ${isActive ? "bg-pink-400 hover:bg-pink-400" : ""}`}>
+        <NavLink to='/dashboard'
+            className={({ isActive }) =>
+                `hover:bg-gray-300 transition-all px-14 py-2 rounded-md ${isActive ? "bg-blue-400 hover:bg-blue-400" : ""
+                }`
+            }>
             Dashboard
         </NavLink>
         <NavLink to='/add-income'
             className={({ isActive }) =>
-                `hover:bg-gray-300 transition-all px-14 py-2 rounded-md ${isActive ? "bg-pink-400 hover:bg-pink-400" : ""
+                `hover:bg-gray-300 transition-all px-14 py-2 rounded-md ${isActive ? "bg-blue-400 hover:bg-blue-400" : ""
                 }`
             }>
             Add Income
         </NavLink>
         <NavLink to='/add-expense'
-            className={({isActive}) => `hover:bg-gray-300 transition-all px-14 py-2 rounded-md ${isActive ? "bg-pink-400 hover:bg-pink-400" : ""}`}>
+            className={({ isActive }) => `hover:bg-gray-300 transition-all px-14 py-2 rounded-md ${isActive ? "bg-blue-400 hover:bg-blue-400" : ""}`}>
             Add Expense
         </NavLink>
 
+        <NavLink
+            to='/'
+            className={({ isActive }) => `hover:bg-gray-300 transition-all min-w-[200px] px-14 py-2 rounded-md ${isActive ? "bg-pink-400 hover:bg-pink-400" : ""}`}>
+            Statistics
+        </NavLink>
 
 
     </>
@@ -75,7 +82,7 @@ const RootLayout = () => {
                 </div>
             </div>
 
-          
+
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RootLayout from './RootLayout.jsx'
-import Dashboard from './Dashboard.jsx'
+import Statistics from './Statistics.jsx'
 import History from './History.jsx'
 import Profile from './Profile.jsx'
 import AddMoney from './AddMoney';
@@ -11,6 +11,7 @@ import AddExpense from './AddExpense';
 import AuthProvider from './AuthProvider.jsx'
 import AllAddMoney from './AllAddMoney.jsx'
 import AllExpenses from './AllExpenses.jsx'
+import Dashboard from './Dashboard.jsx'
 
 
 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Dashboard></Dashboard>
+        element: <Statistics></Statistics>
       },
       {
         path: 'add-income',
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'add-expense',
         element: <AddExpense></AddExpense>
+      },
+      {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>
       },
       {
         path: 'history',
