@@ -14,21 +14,7 @@ const Dashboard = () => {
     const addMoney = 500;
     const cost = 700;
 
-    // Calculate the remaining money (which is addMoney - cost)
-    const remainingMoney = addMoney - cost;
-
-    // Data for the chart
-    const dataIncomeCost = [
-        { name: 'Remaining Money', value: remainingMoney > 0 ? remainingMoney : 0 },
-        { name: 'Cost', value: cost },
-    ];
-
-
-
-    // Define colors: green for remaining money, red for cost
-    const colors = ['#008000', '#FF0000'];
-
-
+    
 
 
     return (
